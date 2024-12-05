@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+#todo-list {
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-height: fit-content;
+    min-height: 80vh;
+}
+
+.titleAndFunc {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    padding: 0 1rem;
+    gap: 10vw;
+}
+
+.functionalities {
+    width: fit-content;
+    border: 2px solid black;
+    display: flex;
+    padding: .5rem;
+    gap: 1rem;
+}
+
+.add-task {
+    display: flex;
+    /* border: 2px solid black; */
+    /* border-radius: 2rem; */
+    padding: 1rem;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.add-task input {
+    background-color: beige;
+    width: 65%;
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.add-task button {
+    width: fit-content;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.mainTaskContainer {
+    width: 100%;
+    overflow: hidden;
+    padding: .2rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    min-height: 45vh;
+    max-height: fit-content;
+}
+
+#tasks-holder {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+    border: 2px solid black;
+    border-radius: .8rem;
+    padding: 1rem;
+    height: fit-content;
+    max-height: 40vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#tasks-holder::-webkit-scrollbar {
+    width: .4rem;
+}
+
+#tasks-holder::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: .2rem;
+}
+
+#tasks-holder li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    gap: 1rem;
+}
+
+#tasks-holder li p {
+    /* border: 2px solid black; */
+    margin-left: .6rem;
+    font-size: 1.1rem;
+}
+
+#tasks-holder li div {
+    display: inline-flex;
+    /* border: 2px solid black; */
+    margin-right: .6rem;
+    gap: .4rem;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+

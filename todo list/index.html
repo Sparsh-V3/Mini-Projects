@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="todo-list">
+        <div class="titleAndFunc">
+            <h1>Todo List...</h1>
+            <div class="functionalities">
+                <button id="resetEverything">Reset</button>
+                <button id="restoreEverything">Restore</button>
+            </div>
+        </div>
+        <hr>
+        <div class="add-task">
+            <input class="taskName" type="text" placeholder="Enter a task.... (Max Character: 60)" maxlength="60">
+            <button class="add-task-btn">Add Task</button>
+        </div>
+        <hr>
+        <div class="tasks">
+            <h3>Tasks:</h3>
+            <div class="mainTaskContainer">
+                <ul id="tasks-holder">
+                    <p id="noTasksMessage" style="padding: .5rem 1rem; color: gray; display: block;">
+                        Currently no tasks are there...
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
